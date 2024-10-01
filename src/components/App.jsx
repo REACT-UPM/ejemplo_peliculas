@@ -100,7 +100,7 @@ export default function App() {
 	  	return (
 					<div className="root">
 						<Navbar/>
-						{loading ? <img src={process.env.PUBLIC_URL + "/spinner.gif"} className="spinner" alt="spinner" />: <Routes>
+						{loading ? <img src="/spinner.gif" className="spinner" alt="spinner" />: <Routes>
 								<Route path="/add" element={<MovieForm themovie={{}} create={create} new={true}/>}/>
 								<Route path="/edit/:movieId" element={<MovieForm themovies={mymovies} update={update}/>}/>
 								<Route path="/show/:movieId" element={<MovieInfo themovies={mymovies} />}/>

@@ -8,13 +8,15 @@ export default function Movie(props) {
 			filmimg = props.miniatura;
 		} else {
 			//es local o relativo a public/
-			filmimg = process.env.PUBLIC_URL + "/" + props.miniatura;
+			filmimg = "/" + props.miniatura;
 		}
 		
 		return <div className="movie">
-			<div className="movie-img">
-				<img className="show" src={filmimg} alt="miniatura de la película"/>
-			</div>
+			<Link to={"/show/"+props.id}>
+				<div className="movie-img">
+					<img className="show" src={filmimg} alt="miniatura de la película"/>
+				</div>
+			</Link>
 			<div className="title">
 			 	{props.titulo || <em>Sin título</em>}
 			</div>
