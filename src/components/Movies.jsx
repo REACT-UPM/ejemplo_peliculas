@@ -6,9 +6,7 @@ export default function Movies(props) {
 	return <div id="main">
 		{props.themovies.map((pelicula,index)=>
 			<Movie 
-			  key={index}
-				edit={()=>props.edit(pelicula.id)}
-				show={()=>props.show(pelicula.id)}
+			  key={index}				
 				delete={()=>props.delete(pelicula.id)}
 				id={pelicula.id}
 				titulo={pelicula.titulo} 
