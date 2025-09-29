@@ -7,8 +7,8 @@ import NotFound from "./NotFound";
 import ShowInfo from "./ShowInfo";
 import { myInitialMovies } from "../constants/constants";
 
-import { Routes, Route} from "react-router-dom";
-import {useNavigate} from "react-router-dom";
+import { Routes, Route} from "react-router";
+import {useNavigate} from "react-router";
 
 const SERVER_URL = "https://api.npoint.io/91b69d0a72d2ee88b573";
 

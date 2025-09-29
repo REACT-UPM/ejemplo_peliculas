@@ -1,4 +1,4 @@
-import {Link, useParams} from "react-router-dom";
+import {Link, useParams} from "react-router";
 
 export default function MovieInfo(props) {
 	let { movieId } = useParams();
